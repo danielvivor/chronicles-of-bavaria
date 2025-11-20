@@ -1,5 +1,5 @@
-﻿# chronicles-of-bavaria
-# Chronicles of Bavaria
+﻿# Chronicles-of-Bavaria
+## Description
 
 A website dedicated to exploring the rich history of Bavaria.  
 The project provides reliable, evidence-based information about artefacts, people, places, and events, supported by timelines, images, and videos.  
@@ -46,6 +46,3 @@ It is designed with accessibility, user experience, and responsivity at its core
 - No broken internal links
 - Screenshots of the finished project included below
 
----
-
-## 📂 Folder Structure
