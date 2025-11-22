@@ -19,7 +19,7 @@ body {min-height: 100vh;
 /* Header styles */
 header {
   background-color: #ffffff;
-  position: fixed; /*try other options later*/
+  position: relative; /*try other options later*/
   width: 100%;
   z-index: 99;
   padding: 0 1rem;
@@ -88,7 +88,6 @@ main {
     background-color: yellow;
     /* Ensure main takes up remaining space */
     flex: 1 0 auto;
-    margin-top: 100px;
 }
 
 /* Footer styles */
@@ -101,9 +100,19 @@ text-decoration: none;
 color: white;
 }
 
+footer p{
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+
 #socials {
   list-style-type: none;
   display: flex;
+  justify-content: center;
+  gap: 6rem;
+  padding: 1rem 0 0.5rem 0;
+  font-size: 200%;
 }
 
 /* Media Query for screens 768px and up */
