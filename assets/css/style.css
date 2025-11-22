@@ -18,11 +18,18 @@ body {min-height: 100vh;
 
 /* Header styles */
 header {
-  background-color: #65a5e6;
+  background-color: #ffffff;
+  position: fixed; /*try other options later*/
+  width: 100%;
+  z-index: 99;
+  padding: 0 1rem;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 255, 0.8);
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
+  color: blue;
 }
 
 /* Main content styles */
