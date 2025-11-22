@@ -52,7 +52,8 @@ header a {
 h1 {
   font-family: 'Oswald', sans-serif;
   color: blue;
-  letter-spacing: 0.4px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
 #menu {
@@ -87,34 +88,53 @@ main {
     background-color: yellow;
     /* Ensure main takes up remaining space */
     flex: 1 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 /* Footer styles */
 footer {
-  background-color: #65a5e6;
+  background-color: #454647ce;
+}
+
+footer a {
+text-decoration: none;
+color: white;
+}
+
+#socials {
+  list-style-type: none;
+  display: flex;
 }
 
 /* Media Query for screens 768px and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
   /* Header adjustments */
-  nav {
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding: 1rem;
-  }
+ nav {
+  display: block;
+  position: relative;
+  box-shadow: none;
+  width: 100%;
+ }
 
-  .nav-toggle-label {
-    display: none;
-  }
+ #menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+ }
 
-  #menu {
-    display: flex;
-  }
+ .nav-toggle-label {
+  display: none;
+ }
 
-  #menu > li {
-    padding-left: 1rem;
+ h1 {
+  letter-spacing: 3px;
+ }
+}
+
+/* Media Query for screens 992px and up */
+@media screen and (min-width: 992px){
+
+  #menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
   }
 }
