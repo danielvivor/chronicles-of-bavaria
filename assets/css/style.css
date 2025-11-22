@@ -25,17 +25,33 @@ header {
   padding: 0 1rem;
   width: 100%;
   box-shadow: 0 3px 10px rgba(0, 0, 255, 0.8);
+  font-family: "Lato", sans-serif;
 }
 
 header a {
   text-decoration: none;
-  color: black;
+  color: #3a3a3a;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
   color: blue;
   letter-spacing: 0.4px;
+}
+
+#nav-links {
+  list-style-type: none;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 110%;
+}
+#nav-links > li {
+  margin-bottom: 10px;
+}
+
+.active-link {
+  font-weight: 500;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 /* Main content styles */
