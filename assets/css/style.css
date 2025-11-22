@@ -27,9 +27,15 @@ header {
   box-shadow: 0 3px 10px rgba(0, 0, 255, 0.8);
 }
 
+header a {
+  text-decoration: none;
+  color: black;
+}
+
 h1 {
   font-family: 'Oswald', sans-serif;
   color: blue;
+  letter-spacing: 0.4px;
 }
 
 /* Main content styles */
