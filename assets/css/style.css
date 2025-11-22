@@ -20,11 +20,28 @@ body {min-height: 100vh;
 header {
   background-color: #ffffff;
   position: fixed; /*try other options later*/
-  width: 100vh;
+  width: 100%;
   z-index: 99;
   padding: 0 1rem;
   box-shadow: 0 3px 4px rgba(0, 0, 255, 0.6);
   font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+  display: block;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+
+  font-size: 2rem;
 }
 
 header a {
@@ -38,13 +55,13 @@ h1 {
   letter-spacing: 0.4px;
 }
 
-#nav-links {
+#menu {
   list-style-type: none;
   letter-spacing: 2px;
   font-weight: 400;
   font-size: 110%;
 }
-#nav-links > li {
+#menu > li {
   margin-bottom: 10px;
 }
 
@@ -62,6 +79,7 @@ nav {
   left: 0;
   padding: 0 1rem;
   display: none; /* Hidden by default */
+  top: 100%;
 }
 
 /* Main content styles */
@@ -69,9 +87,34 @@ main {
     background-color: yellow;
     /* Ensure main takes up remaining space */
     flex: 1 0 auto;
+    margin-top: 50px;
 }
 
 /* Footer styles */
 footer {
   background-color: #65a5e6;
+}
+
+/* Media Query for screens 768px and up */
+@media screen and (min-width: 768px) {
+  /* Header adjustments */
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding: 1rem;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #menu > li {
+    padding-left: 1rem;
+  }
 }
